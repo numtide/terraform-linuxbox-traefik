@@ -27,7 +27,7 @@ variable "cert_email" {
 variable "redirect_http_to_https" {
   type        = bool
   description = "When set to true (default), will automatically redirect all HTTP request to HTTPS"
-  default       = true
+  default     = true
 }
 
 variable "docker_network" {
@@ -39,7 +39,13 @@ variable "docker_network" {
 variable "labels" {
   type        = map(string)
   description = "Labels for the Docker container"
-  default       = {}
+  default     = {}
+}
+
+variable "container_name" {
+  type        = string
+  description = "Name of the created container"
+  default     = "linuxbox-traefik"
 }
 
 variable "log-driver" {

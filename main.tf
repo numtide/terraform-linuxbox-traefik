@@ -43,7 +43,7 @@ resource "linuxbox_docker_container" "traefik" {
   )
 
 
-  name = "linuxbox-traefik"
+  name = var.container_name
 
   log_driver = var.log_driver
   log_opts   = var.log_opts

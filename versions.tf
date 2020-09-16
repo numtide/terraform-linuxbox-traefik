@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     linuxbox = {
-      source = "numtide/linuxbox"
+      source  = "numtide/linuxbox"
       version = ">= 0.3.10"
     }
   }
