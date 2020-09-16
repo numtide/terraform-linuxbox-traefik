@@ -36,7 +36,7 @@ resource "linuxbox_docker_container" "traefik" {
     # enable prometheus metrics
     "--metrics.prometheus=true",
     ],
-    redirect_http_to_https ? [
+    var.redirect_http_to_https ? [
       "--entrypoints.web.http.redirections.entryPoint.to=websecure",
       "--entrypoints.web.http.redirections.entryPoint.scheme=https",
     ] : [],

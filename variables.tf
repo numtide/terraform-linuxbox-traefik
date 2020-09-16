@@ -48,13 +48,13 @@ variable "container_name" {
   default     = "linuxbox-traefik"
 }
 
-variable "log-driver" {
+variable "log_driver" {
   type        = string
   description = "Log driver to use for the Docker container."
   default     = null
 }
 
-variable "log-opts" {
+variable "log_opts" {
   type        = map(string)
   description = "Log driver options for the Docker log driver."
   default     = null
